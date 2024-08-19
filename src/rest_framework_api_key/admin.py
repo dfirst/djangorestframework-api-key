@@ -54,8 +54,3 @@ class APIKeyModelAdmin(admin.ModelAdmin):
             messages.add_message(request, messages.WARNING, message)
         else:
             obj.save()
-
-
-admin.site.register(APIKey, APIKeyModelAdmin)
-
-APIKeyAdmin = APIKeyModelAdmin  # Compatibility with <1.3

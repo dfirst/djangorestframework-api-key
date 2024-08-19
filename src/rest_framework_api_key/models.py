@@ -109,6 +109,7 @@ class AbstractAPIKey(models.Model):
 
     class Meta:  # noqa
         abstract = True
+        app_label = 'rest_framework_api_key'
         ordering = ("-created",)
         verbose_name = "API key"
         verbose_name_plural = "API keys"
